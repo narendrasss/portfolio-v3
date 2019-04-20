@@ -5,6 +5,8 @@ interface MetadataQueryResult {
 }
 
 interface SiteMetadata {
+  title: string;
+  description: string;
   name: string;
   tagline: string;
 }
