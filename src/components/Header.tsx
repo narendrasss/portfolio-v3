@@ -28,8 +28,10 @@ const Header: React.FC<HeaderProps> = ({ url, links }) => {
         </Text>
       </Text>
       <Box display={[0, 1]}>
-        {links.map(({ name, url }) => (
-          <Link to={url}>{name}</Link>
+        {links.map(({ name: linkName, url: linkUrl }) => (
+          <Link key={[linkName, linkUrl].join()} to={linkUrl}>
+            {linkName}
+          </Link>
         ))}
       </Box>
     </Flex>

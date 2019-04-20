@@ -8,8 +8,8 @@ export interface LinkProps extends TextProps {
 
 const Link = styled(Text).attrs((props: LinkProps) => ({
   as: BaseLink,
-  to: props.to,
   color: props.color ? props.color : 'black',
+  to: props.to,
 }))<LinkProps>`
   text-decoration: none;
 `;

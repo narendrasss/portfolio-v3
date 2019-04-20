@@ -42,16 +42,17 @@ export interface BoxProps
     RightProps {
   height?: string;
   display?: string | number[];
+  testID?: string;
 }
 
 const height = style({
-  prop: 'height',
   key: 'heights',
+  prop: 'height',
 });
 
 const display = style({
-  prop: 'display',
   key: 'displays',
+  prop: 'display',
 });
 
 const Box = styled.div<BoxProps>`
