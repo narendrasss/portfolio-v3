@@ -1,30 +1,36 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
 import favicon from '../images/favicon.ico';
 import { useMetadata } from '../hooks';
-import Main from './base/Main';
+import Flex, { FlexProps } from './base/Flex';
 
-interface LayoutProps {
+interface LayoutProps extends FlexProps {
   title?: string;
-  alignItems?: string;
-  justifyContent?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({
   title = 'Narendra Syahrasyad',
   children,
-  ...rest
+  ...props
 }) => {
   const { description } = useMetadata();
   return (
-    <Main {...rest}>
+    <Flex
+      as="main"
+      height="100vh"
+      width="100vw"
+      flexDirection="column"
+      p={1}
+      {...props}
+    >
       <Helmet
         title={title}
         meta={[{ name: 'description', content: description }]}
         link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       />
       {children}
-    </Main>
+    </Flex>
   );
 };
 

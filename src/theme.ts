@@ -1,10 +1,11 @@
 export const theme = {
-  breakpoints: [],
+  breakpoints: [768],
   colors: {
     black: `#000000`,
     grays: [`#fafafa`, `#efefef`, `#aeaeae`],
     white: `#ffffff`,
   },
+  fontSizes: ['2.5rem', '4rem', '8rem'],
   fontWeights: {
     bold: 700,
     light: 300,
@@ -20,4 +21,5 @@ export const theme = {
     body: 1.618,
     title: 1,
   },
+  space: [0, '3rem', '5rem'],
 };
