@@ -17,8 +17,13 @@ interface PageQueryResult {
 interface SiteMetadata {
   title: string;
   description: string;
+  url: string;
+  links: LinkTo[];
+}
+
+interface LinkTo {
   name: string;
-  tagline: string;
+  url: string;
 }
 
 interface PageFrontmatter {

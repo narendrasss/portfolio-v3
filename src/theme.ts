@@ -5,6 +5,7 @@ export const theme = {
     grays: [`#fafafa`, `#efefef`, `#aeaeae`],
     white: `#ffffff`,
   },
+  displays: ['none', 'block'],
   fontSizes: ['2.5rem', '4rem', '8rem'],
   fontWeights: {
     bold: 700,

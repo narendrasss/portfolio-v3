@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import '../main.css';
 import Box from '../components/base/Box';
 import { Text } from '../components/base/Text';
 import { Heading } from '../components/base/Heading';
+import '../main.css';
 
-const Index: React.FC = () => {
+const Index: React.FC<never> = () => {
   return (
     <Layout alignItems="flex-start" justifyContent="center">
       <Heading mb={2}>I'm Narendra.</Heading>

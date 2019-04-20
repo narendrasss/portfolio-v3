@@ -18,7 +18,7 @@ export interface FlexProps
     AlignItemsProps,
     JustifyContentProps {}
 
-const Flex = styled(Box)`
+const Flex = styled(Box)<FlexProps>`
   display: flex;
   ${flexDirection}
   ${flexWrap}
