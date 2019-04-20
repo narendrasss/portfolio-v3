@@ -5,5 +5,17 @@ module.exports = {
     name: `Hello Typescript World!`,
     tagline: `Gatsby + SASS + Typescript = 💪`,
   },
-  plugins: [`gatsby-plugin-typescript`, `gatsby-plugin-tslint`],
+  plugins: [
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-tslint`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/projects`,
+        name: `projects`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 };
