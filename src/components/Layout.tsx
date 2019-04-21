@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
+import { FlexProps } from 'rebass';
 import favicon from '../images/favicon.ico';
 import { useMetadata } from '../hooks';
-import Flex, { FlexProps } from './base/Flex';
 import Header from './Header';
+import Nav from './Nav';
+import Main from './Main';
 
 interface LayoutProps extends FlexProps {
   title?: string;
@@ -16,15 +18,11 @@ const Layout: React.FC<LayoutProps> = ({
   ...props
 }) => {
   const { description, url, links } = useMetadata();
+  const [isNavOpen, setIsNavOpen] = useState(true);
+
+  if (isNavOpen) return <Nav url={url} links={links} />;
   return (
-    <Flex
-      as="main"
-      height="100vh"
-      width="100vw"
-      flexDirection="column"
-      p={1}
-      {...props}
-    >
+    <Main p={1} {...props}>
       <Helmet
         title={title}
         meta={[{ name: 'description', content: description }]}
@@ -32,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({
       />
       <Header url={url} links={links} />
       {children}
-    </Flex>
+    </Main>
   );
 };
 

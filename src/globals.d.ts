@@ -30,3 +30,5 @@ interface PageFrontmatter {
   path: string;
   title: string;
 }
+
+type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

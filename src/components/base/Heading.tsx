@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { Text, TextProps } from './Text';
+import React from 'react';
+import { Heading as BaseHeading, HeadingProps } from 'rebass';
 
-export const Heading = styled(Text).attrs(() => ({
-  as: 'h1',
-  fontSize: 2,
-  fontWeight: 'semibold',
-}))<TextProps>``;
+const Heading: React.FC<HeadingProps> = props => (
+  <BaseHeading as="h1" fontSize={2} lineHeight="title" {...props} />
+);
+
+export default Heading;

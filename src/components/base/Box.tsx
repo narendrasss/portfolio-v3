@@ -1,75 +1,11 @@
 import styled from 'styled-components';
-import {
-  style,
-  space,
-  width,
-  color,
-  flex,
-  order,
-  position,
-  top,
-  left,
-  bottom,
-  right,
-  alignSelf,
-  fontSize,
-  FontSizeProps,
-  SpaceProps,
-  WidthProps,
-  ColorProps,
-  FlexProps,
-  OrderProps,
-  AlignSelfProps,
-  PositionProps,
-  TopProps,
-  LeftProps,
-  BottomProps,
-  RightProps,
-} from 'styled-system';
+import { display, DisplayProps } from 'styled-system';
+import { Box as BaseBox, BoxProps as BaseBoxProps } from 'rebass';
 
-export interface BoxProps
-  extends SpaceProps,
-    WidthProps,
-    ColorProps,
-    FlexProps,
-    OrderProps,
-    AlignSelfProps,
-    FontSizeProps,
-    PositionProps,
-    TopProps,
-    LeftProps,
-    BottomProps,
-    RightProps {
-  height?: string;
-  display?: string | number[];
-  testID?: string;
-}
+export interface BoxProps extends BaseBoxProps, DisplayProps {}
 
-const height = style({
-  key: 'heights',
-  prop: 'height',
-});
-
-const display = style({
-  key: 'displays',
-  prop: 'display',
-});
-
-const Box = styled.div<BoxProps>`
-  ${space}
-  ${width}
-  ${color}
-  ${flex}
-  ${order}
-  ${alignSelf}
-  ${fontSize}
-  ${height}
+const Box = styled(BaseBox)`
   ${display}
-  ${position}
-  ${top}
-  ${left}
-  ${bottom}
-  ${right}
-`;
+` as React.FC<BoxProps>;
 
 export default Box;

@@ -1,17 +1,19 @@
+import React from 'react';
 import styled from 'styled-components';
-import { Link as BaseLink } from 'gatsby';
-import { Text, TextProps } from './Text';
+import { Link as RouterLink } from 'gatsby';
+import { TextProps } from 'rebass';
+import { Text } from './Text';
 
 export interface LinkProps extends TextProps {
   to: string;
 }
 
-const Link = styled(Text).attrs((props: LinkProps) => ({
-  as: BaseLink,
-  color: props.color ? props.color : 'black',
-  to: props.to,
-}))<LinkProps>`
+const BaseLink: React.FC<TextProps> = ({ color = 'black', ...props }) => (
+  <Text as={RouterLink} color={color} {...props} />
+);
+
+const Link = styled(BaseLink)`
   text-decoration: none;
-`;
+` as React.FC<LinkProps>;
 
 export default Link;

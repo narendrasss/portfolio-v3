@@ -1,14 +1,16 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import '../main.css';
+import Heading from '../components/base/Heading';
 import Box from '../components/base/Box';
 import { Text } from '../components/base/Text';
-import { Heading } from '../components/base/Heading';
-import '../main.css';
 
 const Index: React.FC<never> = () => {
   return (
     <Layout alignItems="flex-start" justifyContent="center">
-      <Heading mb={2}>I'm Narendra.</Heading>
+      <Heading fontWeight={600} fontSize={2} mb={2}>
+        I'm Narendra.
+      </Heading>
       <Box width="70%">
         <Text mb={1}>
           I’m a 3rd year Business and Computer Science student @ UBC.
