@@ -8,3 +8,5 @@ export const Text: React.FC<TextProps> = props => (
 export const Mono: React.FC<TextProps> = props => (
   <BaseText as="p" fontFamily="mono" fontSize={[0, 1]} {...props} />
 );
+
+export default Text;

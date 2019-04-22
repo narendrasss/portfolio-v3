@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders without crashing 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-bdVaJa sc-htpNat ejPUVP"
+    font-family="sans"
+    font-size="0,1"
+  />
+</DocumentFragment>
+`;

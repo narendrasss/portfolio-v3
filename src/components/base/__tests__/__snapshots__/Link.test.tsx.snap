@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders without crashing 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat dRQZBK"
+    color="black"
+    font-family="sans"
+    font-size="0,1"
+    href="localhost"
+  />
+</DocumentFragment>
+`;

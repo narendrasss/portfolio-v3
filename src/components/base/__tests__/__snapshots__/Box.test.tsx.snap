@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htoDjs qIBAg"
+  />
+</DocumentFragment>
+`;

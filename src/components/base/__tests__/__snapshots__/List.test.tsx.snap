@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders without crashing 1`] = `
+<DocumentFragment>
+  <p>
+    hello
+  </p>
+  <p>
+    welcome
+  </p>
+</DocumentFragment>
+`;
