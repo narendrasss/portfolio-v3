@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from './Layout';
+import Layout from '../Layout/Layout';
 
 const AnimatedBox = styled.div`
   width: 50%;

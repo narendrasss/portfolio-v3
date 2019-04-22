@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import '../main.css';
+import Layout from '../components/Layout/Layout';
 import Heading from '../components/base/Heading';
 import Box from '../components/base/Box';
 import { Text } from '../components/base/Text';
+import '../main.css';
 
 const Index: React.FC<never> = () => {
   return (

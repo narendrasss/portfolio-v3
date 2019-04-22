@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import { FlexProps } from 'rebass';
-import favicon from '../images/favicon.ico';
-import { useMetadata } from '../hooks';
-import Header from './Header';
-import Nav from './Nav';
-import Main from './Main';
+import favicon from '../../images/favicon.ico';
+import { useMetadata } from '../../hooks';
+import Header from '../Header/Header';
+import Nav from '../Nav/Nav';
+import Main, { MainProps } from '../Main/Main';
 
-interface LayoutProps extends FlexProps {
+interface LayoutProps extends MainProps {
   title?: string;
   color?: string;
 }

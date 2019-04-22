@@ -1,8 +1,8 @@
 import React from 'react';
-import Main from './Main';
-import Header from './Header';
-import Link from './base/Link';
-import List from './base/List';
+import Main from '../Main/Main';
+import Header from '../Header/Header';
+import Link from '../base/Link';
+import List from '../base/List';
 
 export interface NavProps {
   url: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextProps } from 'rebass';
-import { Text } from './base/Text';
+import { Text } from '../base/Text';
 
 export interface DomainProps extends TextProps {
   url: string;

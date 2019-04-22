@@ -1,10 +1,10 @@
 import React from 'react';
 import { Flex } from 'rebass';
 import styled from 'styled-components';
-import Domain from './Domain';
-import List from './base/List';
-import Link from './base/Link';
-import Box from './base/Box';
+import Domain from '../Domain/Domain';
+import List from '../base/List';
+import Link from '../base/Link';
+import Box from '../base/Box';
 
 export interface HeaderProps {
   url: string;

@@ -2,6 +2,8 @@ import React from 'react';
 import { Flex, FlexProps } from 'rebass';
 import styled from 'styled-components';
 
+export { FlexProps as MainProps } from 'rebass';
+
 const Container = styled(Flex)`
   width: 100vw;
   height: 100vh;
