@@ -1,24 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
-import Layout from '../Layout/Layout';
+import styled, { css } from 'styled-components';
+import Heading from '../base/Heading';
+import Main from '../Main/Main';
+import { initStyle, keyframe } from '../../animations/fadeInOut';
 
-const AnimatedBox = styled.div`
-  width: 50%;
-  height: 100%;
-  background: black;
+export interface LoadingProps {
+  duration?: number;
+}
+
+const Message = styled(Heading)<LoadingProps>`
+  ${({ duration = 1.2 }) => css`
+    ${initStyle}
+    animation: ${keyframe} ${duration}s ease-in-out;
+  `}
 `;
 
-const Center = styled.h1`
-  position: absolute;
-  color: white;
-`;
-
-const Loading: React.FC = () => (
-  <Layout>
-    <AnimatedBox />
-    <AnimatedBox />
-    <Center>hello!</Center>
-  </Layout>
+const Loading: React.FC<LoadingProps> = ({ duration }) => (
+  <Main alignItems="center" justifyContent="center">
+    <Message duration={duration}>hello!</Message>
+  </Main>
 );
 
 export default Loading;

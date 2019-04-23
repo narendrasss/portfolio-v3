@@ -3,6 +3,7 @@ import { useMetadata } from '../../hooks';
 import { MainProps } from '../Main/Main';
 import Nav from '../Nav/Nav';
 import Content from '../Content/Content';
+import '../../main.css';
 
 interface LayoutProps extends MainProps {
   title?: string;
