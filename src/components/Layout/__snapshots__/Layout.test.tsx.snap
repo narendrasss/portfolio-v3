@@ -4,13 +4,8 @@ exports[`Layout renders without crashing 1`] = `
 <DocumentFragment>
   <main
     class="sc-bdVaJa sc-bwzfXH sc-gZMcBi bKgYbR"
-    data-testid="main"
+    data-testid="content"
   >
-    <button
-      class="sc-bdVaJa sc-gqjmRU kGcAOd sc-dnqmqq bzPRsb"
-      data-testid="nav-button"
-      type="button"
-    />
     <header
       class="sc-bdVaJa sc-bwzfXH sc-iwsKbI dUmjld"
       width="100%"
@@ -73,6 +68,26 @@ exports[`Layout renders without crashing 1`] = `
         </a>
       </nav>
     </header>
+    <button
+      class="sc-bdVaJa sc-gqjmRU sc-VigVT bvdyGS sc-dnqmqq kXPwVz"
+      data-testid="nav-button"
+      display="block,none"
+      type="button"
+      width="4.5rem"
+    >
+      <div
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX hFTANy"
+        width="4.5rem"
+      />
+      <div
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX cVrGbe"
+        width="3.6rem"
+      />
+      <div
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX gTeBaA"
+        width="2.25rem"
+      />
+    </button>
   </main>
 </DocumentFragment>
 `;

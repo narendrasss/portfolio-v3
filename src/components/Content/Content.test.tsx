@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import Nav from './Nav';
+import { render, fireEvent } from 'react-testing-library';
+import Content from './Content';
 
-describe('Nav', () => {
+describe('Content', () => {
   const props = {
     title: `Narendra Syahrasyad`,
     description: `Front-end web developer and Business and Computer Science candidate at UBC.`,
@@ -29,7 +29,14 @@ describe('Nav', () => {
   };
 
   it('renders without crashing', () => {
-    const { asFragment } = render(<Nav {...props} />);
+    const { asFragment } = render(<Content {...props} />);
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('calls handler on nav button press', () => {
+    const { getByTestId } = render(<Content {...props} />);
+
+    fireEvent.click(getByTestId('nav-button'));
+    expect(props.onNavClick).toHaveBeenCalled();
   });
 });

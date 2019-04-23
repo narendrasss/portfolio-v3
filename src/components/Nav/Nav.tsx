@@ -1,17 +1,34 @@
 import React from 'react';
-import Main from '../Main/Main';
+import Helmet from 'react-helmet';
 import Header from '../Header/Header';
-import Link from '../base/Link';
+import Main from '../Main/Main';
+import NavButton from '../NavButton/NavButton';
+import { ContentProps } from '../Content/Content';
 import List from '../base/List';
+import Link from '../base/Link';
 
-export interface NavProps {
-  url: string;
-  links: LinkTo[];
-}
-
-const Nav: React.FC<NavProps> = ({ url, links }) => (
-  <Main as="nav" p={1} bg="black" color="white" justifyContent="center">
+const Nav: React.FC<ContentProps> = ({
+  title,
+  description,
+  url,
+  links,
+  onNavClick,
+  ...props
+}) => (
+  <Main
+    data-testid="main"
+    p={1}
+    bg="black"
+    color="white"
+    justifyContent="center"
+    {...props}
+  >
+    <Helmet
+      title={title}
+      meta={[{ name: 'description', content: description }]}
+    />
     <Header url={url} links={links} />
+    <NavButton onClick={onNavClick} isOpen={true} display={['block', 'none']} />
     <List items={links}>
       {({ name, url }) => (
         <Link

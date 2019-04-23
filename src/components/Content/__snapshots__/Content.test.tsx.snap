@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Nav renders without crashing 1`] = `
+exports[`Content renders without crashing 1`] = `
 <DocumentFragment>
   <main
-    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi hHorEC"
-    color="white"
+    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi bKgYbR"
     data-testid="main"
   >
     <header
@@ -70,61 +69,25 @@ exports[`Nav renders without crashing 1`] = `
       </nav>
     </header>
     <button
-      class="sc-bdVaJa sc-gqjmRU sc-jTzLTM hzYros sc-dnqmqq kXPwVz"
-      data-testid="button-close"
+      class="sc-bdVaJa sc-gqjmRU sc-VigVT bvdyGS sc-dnqmqq kXPwVz"
+      data-testid="nav-button"
       display="block,none"
       type="button"
       width="4.5rem"
     >
       <div
-        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX sc-jzJRlG gJpFoh"
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX hFTANy"
         width="4.5rem"
       />
       <div
-        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX sc-jzJRlG gJpFoh"
-        width="4.5rem"
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX cVrGbe"
+        width="3.6rem"
+      />
+      <div
+        class="sc-bdVaJa sc-dnqmqq sc-fjdhpX gTeBaA"
+        width="2.25rem"
       />
     </button>
-    <a
-      class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat gjSwEg"
-      color="white"
-      font-family="sans"
-      font-size="2"
-      font-weight="600"
-      href="/projects"
-    >
-      Projects
-    </a>
-    <a
-      class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat gjSwEg"
-      color="white"
-      font-family="sans"
-      font-size="2"
-      font-weight="600"
-      href="/about"
-    >
-      About
-    </a>
-    <a
-      class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat gjSwEg"
-      color="white"
-      font-family="sans"
-      font-size="2"
-      font-weight="600"
-      href="/blog"
-    >
-      Blog
-    </a>
-    <a
-      class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat gjSwEg"
-      color="white"
-      font-family="sans"
-      font-size="2"
-      font-weight="600"
-      href="/resume"
-    >
-      Resume
-    </a>
   </main>
 </DocumentFragment>
 `;

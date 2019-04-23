@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavIconButton renders without crashing 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdVaJa sc-dnqmqq sc-iwsKbI hAPMXe sc-htoDjs jZenbE"
+    data-testid="button-open"
+    type="button"
+    width="4.5rem"
+  >
+    <div
+      class="sc-bdVaJa sc-htoDjs sc-gqjmRU fyxggL"
+      width="4.5rem"
+    />
+    <div
+      class="sc-bdVaJa sc-htoDjs sc-gqjmRU ccAPZS"
+      width="3.6rem"
+    />
+    <div
+      class="sc-bdVaJa sc-htoDjs sc-gqjmRU kPyfCE"
+      width="2.25rem"
+    />
+  </button>
+</DocumentFragment>
+`;
