@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Domain renders without crashing 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-bdVaJa sc-htpNat jzCLQO"
+    font-family="sans"
+    font-size="0,1"
+    font-weight="600"
+  >
+    narendras
+    <span
+      class="sc-bdVaJa sc-htpNat fYauba"
+      font-family="sans"
+      font-size="0,1"
+      font-weight="300"
+    >
+      .io
+    </span>
+  </p>
+</DocumentFragment>
+`;

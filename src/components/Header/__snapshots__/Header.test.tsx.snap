@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders without crashing 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-bdVaJa sc-bwzfXH sc-iwsKbI dUmjld"
+    width="100%"
+  >
+    <p
+      class="sc-bdVaJa sc-htpNat jzCLQO"
+      font-family="sans"
+      font-size="0,1"
+      font-weight="600"
+    >
+      narendras
+      <span
+        class="sc-bdVaJa sc-htpNat fYauba"
+        font-family="sans"
+        font-size="0,1"
+        font-weight="300"
+      >
+        .io
+      </span>
+    </p>
+    <nav
+      class="sc-bdVaJa sc-dnqmqq hjWSCW"
+      display="none,block"
+    >
+      <a
+        class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat dRQZBK"
+        color="black"
+        font-family="sans"
+        font-size="0,1"
+        href="/about"
+      >
+        about
+      </a>
+      <a
+        class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat dRQZBK"
+        color="black"
+        font-family="sans"
+        font-size="0,1"
+        href="/blog"
+      >
+        blog
+      </a>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

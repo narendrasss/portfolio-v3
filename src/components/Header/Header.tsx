@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ url, links }) => {
   return (
     <Container as="header" width="100%" m={1} justifyContent="space-between">
       <Domain url={url} />
-      <Box display={['none', 'block']}>
+      <Box as="nav" display={['none', 'block']}>
         <List items={links}>
           {({ name, url }) => (
             <Link key={[name, url].join()} to={url}>

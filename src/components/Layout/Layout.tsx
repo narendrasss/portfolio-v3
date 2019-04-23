@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import favicon from '../../images/favicon.ico';
 import { useMetadata } from '../../hooks';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Main, { MainProps } from '../Main/Main';
+import NavIconButton from '../NavIconButton/NavIconButton';
 
 interface LayoutProps extends MainProps {
   title?: string;
-  color?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({
@@ -17,16 +16,18 @@ const Layout: React.FC<LayoutProps> = ({
   ...props
 }) => {
   const { description, url, links } = useMetadata();
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  if (isNavOpen) return <Nav url={url} links={links} />;
+  const handleClick = () => setIsNavOpen(prev => !prev);
+
+  if (isNavOpen) return <Nav data-testid="nav" url={url} links={links} />;
   return (
-    <Main p={1} {...props}>
+    <Main data-testid="main" p={1} {...props}>
       <Helmet
         title={title}
         meta={[{ name: 'description', content: description }]}
-        link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
       />
+      <NavIconButton data-testid="nav-button" onClick={handleClick} />
       <Header url={url} links={links} />
       {children}
     </Main>
