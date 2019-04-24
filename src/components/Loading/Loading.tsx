@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Heading from '../base/Heading';
 import Main from '../Main/Main';
-import { initStyle, keyframe } from '../../animations/fadeInOut';
+import { initStyle, keyframe } from '../../animations/fade/fadeInOut';
 
 export interface LoadingProps {
   duration?: number;

@@ -1,20 +1,20 @@
 import React from 'react';
-import { TextProps } from 'rebass';
-import { Text } from '../base/Text';
+import Text from '../base/Text';
+import Link, { LinkProps } from '../base/Link';
 
-export interface DomainProps extends TextProps {
+export interface DomainProps extends Omit<LinkProps, 'to'> {
   url: string;
 }
 
 const Domain: React.FC<DomainProps> = ({ url, ...props }) => {
   const [name, domain] = url.split('.');
   return (
-    <Text fontWeight={600} {...props}>
+    <Link to="/home" fontWeight={600} {...props}>
       {name}
       <Text as="span" fontWeight={300}>
         .{domain}
       </Text>
-    </Text>
+    </Link>
   );
 };
 

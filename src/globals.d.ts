@@ -14,6 +14,17 @@ interface PageQueryResult {
   };
 }
 
+interface AllPagesQueryResult {
+  allMarkdownRemark: {
+    edges: {
+      node: {
+        id: string;
+        frontmatter: PageFrontmatter;
+      };
+    }[];
+  };
+}
+
 interface SiteMetadata {
   title: string;
   description: string;
@@ -29,6 +40,8 @@ interface LinkTo {
 interface PageFrontmatter {
   path: string;
   title: string;
+  tech: string[];
+  description: string;
 }
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

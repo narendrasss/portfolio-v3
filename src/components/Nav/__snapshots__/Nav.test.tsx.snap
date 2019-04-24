@@ -11,11 +11,13 @@ exports[`Nav renders without crashing 1`] = `
       class="sc-bdVaJa sc-bwzfXH sc-iwsKbI dUmjld"
       width="100%"
     >
-      <p
-        class="sc-bdVaJa sc-htpNat jzCLQO"
+      <a
+        class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat cYLLdT"
+        color="black"
         font-family="sans"
         font-size="0,1"
         font-weight="600"
+        href="/home"
       >
         narendras
         <span
@@ -26,7 +28,7 @@ exports[`Nav renders without crashing 1`] = `
         >
           .io
         </span>
-      </p>
+      </a>
       <nav
         class="sc-bdVaJa sc-dnqmqq hjWSCW"
         display="none,block"

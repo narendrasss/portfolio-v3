@@ -2,11 +2,13 @@
 
 exports[`Domain renders without crashing 1`] = `
 <DocumentFragment>
-  <p
-    class="sc-bdVaJa sc-htpNat jzCLQO"
+  <a
+    class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat cYLLdT"
+    color="black"
     font-family="sans"
     font-size="0,1"
     font-weight="600"
+    href="/home"
   >
     narendras
     <span
@@ -17,6 +19,6 @@ exports[`Domain renders without crashing 1`] = `
     >
       .io
     </span>
-  </p>
+  </a>
 </DocumentFragment>
 `;
