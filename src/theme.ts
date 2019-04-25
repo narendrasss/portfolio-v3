@@ -6,7 +6,7 @@ export const theme = {
     white: `#ffffff`,
   },
   displays: ['none', 'block'],
-  fontSizes: ['2.5rem', '4rem', '8rem'],
+  fontSizes: ['2rem', '2.5rem', '4rem', '8rem'],
   fontWeights: {
     bold: 700,
     light: 300,
@@ -14,6 +14,7 @@ export const theme = {
     semibold: 600,
   },
   fonts: {
+    serif: `'IBM Plex Serif', serif`,
     mono: `'IBM Plex Mono', 'Menlo', 'Courier New', Courier, monospace`,
     sans: `'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
@@ -22,5 +23,5 @@ export const theme = {
     body: 1.618,
     title: 1,
   },
-  space: [0, '3rem', '5rem'],
+  space: [0, '3rem', '5rem', '10rem'],
 };

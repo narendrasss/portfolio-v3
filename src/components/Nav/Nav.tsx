@@ -35,7 +35,7 @@ const Nav: React.FC<ContentProps> = ({
           key={[name, url].join()}
           to={url}
           color="white"
-          fontSize={2}
+          fontSize={3}
           fontWeight={600}
         >
           {name.charAt(0).toUpperCase() + name.slice(1)}

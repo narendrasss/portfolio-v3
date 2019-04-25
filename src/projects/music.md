@@ -1,6 +1,6 @@
 ---
 path: /projects/music
 title: Music
-tech: [typescript]
+tech: [react, node.js, express, postgresql]
 description: Music streaming for CPSC 304.
 ---

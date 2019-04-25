@@ -3,8 +3,25 @@ import Link from '../base/Link';
 import { Flex } from 'rebass';
 import Heading from '../base/Heading';
 import Text from '../base/Text';
-import Box from '../base/Box';
 import List from '../base/List';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
+
+const Tech = styled(Text)`
+  text-transform: capitalize;
+`;
+
+const LinkContainer = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 3rem;
+  margin: 0 -3rem;
+  border-top: 1px solid ${themeGet('colors.grays.1', '#efefef')};
+  &:last-child {
+    border-bottom: 1px solid ${themeGet('colors.grays.1', '#efefef')};
+  }
+`;
 
 const ProjectLink: React.FC<PageFrontmatter> = ({
   path,
@@ -12,23 +29,27 @@ const ProjectLink: React.FC<PageFrontmatter> = ({
   description,
   tech,
 }) => (
-  <Link to={path}>
-    <Flex alignItems="center">
-      <Heading fontSize={1}>{title}</Heading>
-      <Box>
-        <Text fontSize="2rem">{description}</Text>
-        <Flex>
-          <List items={tech}>
-            {technology => (
-              <Text key={technology} fontWeight={300} fontSize="2rem">
-                {technology}
-              </Text>
-            )}
-          </List>
-        </Flex>
-      </Box>
+  <LinkContainer to={path}>
+    <Heading flex="1" fontSize={2} fontFamily="sans" mb="1rem">
+      {title}
+    </Heading>
+    <Text>{description}</Text>
+    <Flex>
+      <List items={tech}>
+        {technology => (
+          <Tech
+            key={technology}
+            color="grays.2"
+            fontWeight={300}
+            fontSize="1.5rem"
+            mr="0.5rem"
+          >
+            {technology}
+          </Tech>
+        )}
+      </List>
     </Flex>
-  </Link>
+  </LinkContainer>
 );
 
 export default ProjectLink;

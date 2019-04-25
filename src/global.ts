@@ -21,12 +21,16 @@ export default createGlobalStyle`
   h1,
   h2,
   h3 {
-    font-family: ${themeGet('fonts.sans')};
+    font-family: ${themeGet('fonts.serif')};
     font-weight: ${themeGet('fontWeights.semibold')};
   }
 
   h1 {
     line-height: ${themeGet('lineHeights.title')};
+  }
+
+  h3 {
+    font-family: ${themeGet('fonts.sans')};
   }
 
   code {

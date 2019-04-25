@@ -3,51 +3,47 @@
 exports[`ProjectLink renders without crashing 1`] = `
 <DocumentFragment>
   <a
-    class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat dRQZBK"
+    class="sc-bdVaJa sc-htoDjs sc-iwsKbI dGUIbm sc-htpNat dRQZBK"
     color="black"
     font-family="sans"
     font-size="0,1"
     href="/projects/coin"
   >
+    <h1
+      class="sc-bdVaJa sc-htpNat sc-bxivhb bNHXUR"
+      font-size="2"
+      font-weight="bold"
+    >
+      Coin
+    </h1>
+    <p
+      class="sc-bdVaJa sc-htpNat ejPUVP"
+      font-family="sans"
+      font-size="0,1"
+    >
+      Web based financial management
+    </p>
     <div
       class="sc-bdVaJa sc-bwzfXH pjOvZ"
     >
-      <h1
-        class="sc-bdVaJa sc-htpNat sc-bxivhb gBkMPw"
-        font-size="2"
-        font-weight="bold"
+      <p
+        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat frfsRI"
+        color="grays.2"
+        font-family="sans"
+        font-size="1.5rem"
+        font-weight="300"
       >
-        Coin
-      </h1>
-      <div
-        class="sc-bdVaJa sc-dnqmqq bzPRsb"
+        react
+      </p>
+      <p
+        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat frfsRI"
+        color="grays.2"
+        font-family="sans"
+        font-size="1.5rem"
+        font-weight="300"
       >
-        <p
-          class="sc-bdVaJa sc-htpNat ejPUVP"
-          font-family="sans"
-          font-size="0,1"
-        >
-          Web based financial management
-        </p>
-        <div
-          class="sc-bdVaJa sc-bwzfXH pjOvZ"
-        >
-          <p
-            class="sc-bdVaJa sc-htpNat ejPUVP"
-            font-family="sans"
-            font-size="0,1"
-          >
-            react
-          </p>
-          <p
-            class="sc-bdVaJa sc-htpNat ejPUVP"
-            font-family="sans"
-            font-size="0,1"
-          >
-            typescript
-          </p>
-        </div>
-      </div>
+        typescript
+      </p>
     </div>
   </a>
 </DocumentFragment>

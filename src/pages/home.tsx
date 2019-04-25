@@ -28,14 +28,14 @@ const ParTwo = styled(Text)`
 
 const HomePage: React.FC<never> = () => (
   <Layout alignItems="flex-start" justifyContent="center">
-    <Title fontWeight={600} fontSize={2} mb={2}>
+    <Title fontWeight={600} mb={2}>
       I'm Narendra.
     </Title>
     <Box width="70%">
-      <ParOne mb={1}>
+      <ParOne fontSize={1} mb={1}>
         I’m a 3rd year Business and Computer Science student @ UBC.
       </ParOne>
-      <ParTwo>
+      <ParTwo fontSize={1}>
         I specialize in building web-based applications and user interfaces.
       </ParTwo>
     </Box>

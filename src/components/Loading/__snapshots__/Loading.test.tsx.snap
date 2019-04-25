@@ -6,8 +6,8 @@ exports[`Loading renders without crashing 1`] = `
     class="sc-bdVaJa sc-bwzfXH sc-htoDjs dyHaNR"
   >
     <h1
-      class="sc-bdVaJa sc-htpNat sc-dnqmqq hclutY sc-bxivhb gBkMPw"
-      font-size="2"
+      class="sc-bdVaJa sc-htpNat sc-dnqmqq hclutY sc-bxivhb hyqNPW"
+      font-size="3"
       font-weight="bold"
     >
       hello!

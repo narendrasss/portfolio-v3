@@ -6,7 +6,7 @@ export { FlexProps as MainProps } from 'rebass';
 
 const Container = styled(Flex)`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 ` as React.FC<FlexProps>;
 
 const Main: React.FC<FlexProps> = props => (
