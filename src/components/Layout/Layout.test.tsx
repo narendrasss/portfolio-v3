@@ -7,11 +7,6 @@ jest.mock('../../hooks');
 describe('Layout', () => {
   const component = <Layout title="Narendra Syahrasyad" />;
 
-  it('renders without crashing', () => {
-    const { asFragment } = render(component);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders content on first mount', () => {
     const { queryByTestId } = render(component);
     expect(queryByTestId('content')).toBeTruthy();

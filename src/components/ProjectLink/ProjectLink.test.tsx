@@ -10,11 +10,6 @@ describe('ProjectLink', () => {
     description: 'Web based financial management',
   };
 
-  it('renders without crashing', () => {
-    const { asFragment } = render(<ProjectLink {...mockFrontmatter} />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders the project title', () => {
     const { queryByText } = render(<ProjectLink {...mockFrontmatter} />);
     expect(queryByText(mockFrontmatter.title)).toBeTruthy();

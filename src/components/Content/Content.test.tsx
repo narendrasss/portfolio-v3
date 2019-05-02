@@ -28,11 +28,6 @@ describe('Content', () => {
     onNavClick: jest.fn(),
   };
 
-  it('renders without crashing', () => {
-    const { asFragment } = render(<Content {...props} />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('calls handler on nav button press', () => {
     const { getByTestId } = render(<Content {...props} />);
 

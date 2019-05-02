@@ -57,7 +57,7 @@ const ProjectLink: React.FC<PageFrontmatter> = ({
         </List>
       </Flex>
     </Box>
-    <DetailsIcon size="8rem" />
+    <DetailsIcon size="6rem" />
   </LinkContainer>
 );
 

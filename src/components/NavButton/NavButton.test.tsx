@@ -5,11 +5,6 @@ import NavButton from './NavButton';
 describe('NavIconButton', () => {
   const mockHandler = jest.fn();
 
-  it('renders without crashing', () => {
-    const { asFragment } = render(<NavButton onClick={mockHandler} />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('calls click handler when clicked', () => {
     const { getByTestId } = render(<NavButton onClick={mockHandler} />);
     fireEvent.click(getByTestId('button-open'));

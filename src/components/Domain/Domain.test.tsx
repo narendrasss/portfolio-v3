@@ -5,11 +5,6 @@ import Domain from './Domain';
 describe('Domain', () => {
   const url = 'narendras.io';
 
-  it('renders without crashing', () => {
-    const { asFragment } = render(<Domain url={url} />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders own domain', () => {
     const ownDomain = url.split('.')[0];
     const { queryByText } = render(<Domain url={url} />);

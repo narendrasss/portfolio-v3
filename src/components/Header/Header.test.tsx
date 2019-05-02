@@ -14,15 +14,9 @@ describe('Header', () => {
       url: '/blog',
     },
   ];
-  const component = <Header url={url} links={links} />;
-
-  it('renders without crashing', () => {
-    const { asFragment } = render(component);
-    expect(asFragment()).toMatchSnapshot();
-  });
 
   it('renders all links correctly', () => {
-    const { queryByText } = render(component);
+    const { queryByText } = render(<Header url={url} links={links} />);
     links.forEach(({ name }) => {
       expect(queryByText(name)).toBeTruthy();
     });
