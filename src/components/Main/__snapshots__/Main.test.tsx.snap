@@ -3,7 +3,7 @@
 exports[`Main renders without crashing 1`] = `
 <DocumentFragment>
   <main
-    class="sc-bdVaJa sc-bwzfXH sc-htoDjs jiVnaf"
+    class="sc-bdVaJa sc-bwzfXH sc-htoDjs kDQXzT"
   />
 </DocumentFragment>
 `;

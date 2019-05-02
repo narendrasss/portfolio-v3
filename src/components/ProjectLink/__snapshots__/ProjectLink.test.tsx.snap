@@ -10,7 +10,8 @@ exports[`ProjectLink renders without crashing 1`] = `
     href="/projects/coin"
   >
     <h1
-      class="sc-bdVaJa sc-htpNat sc-bxivhb bNHXUR"
+      class="sc-bdVaJa sc-htpNat sc-bxivhb fjWLGm"
+      font-family="sans"
       font-size="2"
       font-weight="bold"
     >
@@ -27,7 +28,7 @@ exports[`ProjectLink renders without crashing 1`] = `
       class="sc-bdVaJa sc-bwzfXH pjOvZ"
     >
       <p
-        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat frfsRI"
+        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat grpdlU"
         color="grays.2"
         font-family="sans"
         font-size="1.5rem"
@@ -36,7 +37,7 @@ exports[`ProjectLink renders without crashing 1`] = `
         react
       </p>
       <p
-        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat frfsRI"
+        class="sc-bdVaJa sc-dnqmqq oqlux sc-htpNat grpdlU"
         color="grays.2"
         font-family="sans"
         font-size="1.5rem"

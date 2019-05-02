@@ -3,7 +3,7 @@
 exports[`Nav renders without crashing 1`] = `
 <DocumentFragment>
   <main
-    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi hHorEC"
+    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi iWKbcB"
     color="white"
     data-testid="main"
   >

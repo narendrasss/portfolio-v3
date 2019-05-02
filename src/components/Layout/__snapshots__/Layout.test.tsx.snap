@@ -3,7 +3,7 @@
 exports[`Layout renders without crashing 1`] = `
 <DocumentFragment>
   <main
-    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi bKgYbR"
+    class="sc-bdVaJa sc-bwzfXH sc-gZMcBi gHDtBQ"
     data-testid="content"
   >
     <header

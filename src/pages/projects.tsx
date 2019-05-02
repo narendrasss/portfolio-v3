@@ -15,7 +15,7 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({
   },
 }) => (
   <Layout justifyContent="center">
-    <Heading fontSize="5rem" my={3}>
+    <Heading fontSize="5rem" mb={3} mt="12rem">
       Projects
     </Heading>
     <List items={edges}>
