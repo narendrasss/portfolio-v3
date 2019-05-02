@@ -8,8 +8,7 @@ exports[`Nav renders without crashing 1`] = `
     data-testid="main"
   >
     <header
-      class="sc-bdVaJa sc-bwzfXH sc-iwsKbI dUmjld"
-      width="100%"
+      class="sc-bdVaJa sc-bwzfXH sc-iwsKbI gDIeTP"
     >
       <a
         class="sc-bdVaJa sc-htoDjs jssEWI sc-htpNat cYLLdT"

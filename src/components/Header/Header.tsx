@@ -15,11 +15,13 @@ const Container = styled(Flex)`
   position: fixed;
   top: 0;
   left: 0;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 const Header: React.FC<HeaderProps> = ({ url, links }) => {
   return (
-    <Container as="header" width="100%" m={1} justifyContent="space-between">
+    <Container as="header" m={1}>
       <Domain url={url} />
       <Box as="nav" display={['none', 'block']}>
         <List items={links}>
