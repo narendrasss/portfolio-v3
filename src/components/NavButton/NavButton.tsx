@@ -8,6 +8,7 @@ const Container = styled(Button)`
   top: 0;
   right: 0;
   display: flex;
+  z-index: 10;
 ` as React.FC<ButtonProps>;
 
 const OpenContainer = styled(Container)`

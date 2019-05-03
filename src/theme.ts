@@ -23,5 +23,5 @@ export const theme = {
     body: 1.618,
     title: 1,
   },
-  space: [0, '3rem', '5rem', '10rem'],
+  space: [0, '3rem', '5rem', '10rem', '16rem'],
 };

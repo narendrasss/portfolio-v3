@@ -29,7 +29,12 @@ const DetailsIcon = styled(KeyboardArrowRight)`
   color: ${themeGet('colors.grays.1', '#efefef')};
 `;
 
-const ProjectLink: React.FC<PageFrontmatter> = ({
+export type ProjectLinkProps = Pick<
+  PageFrontmatter,
+  'path' | 'title' | 'description' | 'tech'
+>;
+
+const ProjectLink: React.FC<ProjectLinkProps> = ({
   path,
   title,
   description,

@@ -17,6 +17,7 @@ const Container = styled(Flex)`
   left: 0;
   justify-content: space-between;
   width: 100%;
+  z-index: 10;
 `;
 
 const Header: React.FC<HeaderProps> = ({ url, links }) => {
