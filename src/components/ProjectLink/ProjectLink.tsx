@@ -18,7 +18,7 @@ const LinkContainer = styled(Link)`
   align-items: center;
   justify-content: space-between;
   padding: 4rem 3rem;
-  margin: 0 -3rem;
+  margin: 0 -${themeGet('space.1', '3rem')};
   border-top: 1px solid ${themeGet('colors.grays.1', '#efefef')};
   &:last-child {
     border-bottom: 1px solid ${themeGet('colors.grays.1', '#efefef')};

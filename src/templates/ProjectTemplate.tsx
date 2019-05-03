@@ -1,22 +1,23 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-interface ProjectsTemplateProps {
+interface ProjectTemplateProps {
   data: PageQueryResult;
 }
 
-const ProjectsTemplate: React.FC<ProjectsTemplateProps> = ({
+const ProjectTemplate: React.FC<ProjectTemplateProps> = ({
   data: { markdownRemark },
 }) => {
+  const { html, frontmatter } = markdownRemark;
   return (
     <article>
-      <h1>{markdownRemark.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+      <h1>{frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );
 };
 
-export default ProjectsTemplate;
+export default ProjectTemplate;
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -25,6 +26,11 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        tech
+        description
+        github
+        client
+        team
       }
     }
   }

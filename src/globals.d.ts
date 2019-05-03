@@ -42,6 +42,9 @@ interface PageFrontmatter {
   title: string;
   tech: string[];
   description: string;
+  github: string;
+  client: string;
+  team: string[];
 }
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
